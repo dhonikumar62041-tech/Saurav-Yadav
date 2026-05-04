@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Saurav Yadav — Cinematographer & Video Editor</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Outfit:wght@200;300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Animated Background -->
+  <div class="bg-canvas">
+    <canvas id="particleCanvas"></canvas>
+    <div class="grain-overlay"></div>
+    <div class="vignette"></div>
+  </div>
+
+  <!-- Floating light blobs -->
+  <div class="blob blob-1"></div>
+  <div class="blob blob-2"></div>
+  <div class="blob blob-3"></div>
+
+  <!-- Navigation -->
+  <nav id="navbar">
+    <div class="nav-inner">
+      <a href="#hero" class="nav-logo">SY<span class="dot"></span></a>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#portfolio">Work</a></li>
+        <li><a href="#films">Films</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ═══════════════════════════════════ HERO ═══════════════════════════════════ -->
+  <section id="hero">
+    <div class="hero-layout">
+
+      <div class="hero-content">
+        <p class="hero-eyebrow reveal-up">Visual Storyteller</p>
+        <h1 class="hero-name reveal-up delay-1">
+          Saurav<br><em>Kumar</em>
+        </h1>
+        <p class="hero-subtitle reveal-up delay-2">Cinematographer &amp; Video Editor</p>
+        <div class="hero-cta reveal-up delay-3">
+          <a href="#portfolio" class="btn-primary">View Work</a>
+          <a href="#contact" class="btn-ghost">Get in Touch</a>
+        </div>
+      </div>
+
+      <div class="hero-reel reveal-up delay-4">
+        <div class="reel-frame reel-frame--vertical">
+          <div class="reel-label">SHOWREEL 2026</div>
+          <div class="video-wrapper video-wrapper--vertical">
+            <iframe
+              src="https://www.youtube.com/embed/dQw4w9WgXcQ?autoplay=0&rel=0&modestbranding=1&color=white"
+              title="Saurav Yadav Showreel 2026"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen>
+            </iframe>
+          </div>
+          <div class="reel-border-tl"></div>
+          <div class="reel-border-br"></div>
+        </div>
+      </div>
+
+    </div>
+
+    </div><!-- /.hero-layout -->
+
+    <div class="hero-scroll-hint">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════ ABOUT ═══════════════════════════════════ -->
+  <section id="about">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-text">
+          <span class="section-tag fade-in">About</span>
+          <h2 class="section-title fade-in">
+            Every frame<br>is a <em>feeling</em>.
+          </h2>
+          <p class="about-desc fade-in">
+            I'm Saurav Yadav — a cinematographer and video editor obsessed with the poetry of light, motion, and narrative. I believe the camera isn't just a tool; it's a language. My work spans short films, brand stories, and documentary work, always with a singular intent: to make the viewer <em>feel</em> something real.
+          </p>
+          <p class="about-desc fade-in">
+            With a meticulous eye for color grading and a deep understanding of visual rhythm, I craft cinematic experiences that linger long after the screen goes dark.
+          </p>
+          <div class="about-stats fade-in">
+            <div class="stat">
+              <span class="stat-num">50+</span>
+              <span class="stat-label">Projects</span>
+            </div>
+            <div class="stat">
+              <span class="stat-num">5+</span>
+              <span class="stat-label">Years</span>
+            </div>
+            <div class="stat">
+              <span class="stat-num">2</span>
+              <span class="stat-label">Awards</span>
+            </div>
+          </div>
+        </div>
+        <div class="about-visual fade-in">
+          <div class="about-img-frame">
+            <div class="about-img-placeholder">
+              <div class="camera-icon">
+                <svg viewBox="0 0 80 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <rect x="5" y="12" width="70" height="42" rx="6" stroke="currentColor" stroke-width="2"/>
+                  <circle cx="40" cy="33" r="13" stroke="currentColor" stroke-width="2"/>
+                  <circle cx="40" cy="33" r="7" stroke="currentColor" stroke-width="1.5"/>
+                  <rect x="24" y="5" width="16" height="10" rx="3" stroke="currentColor" stroke-width="2"/>
+                  <circle cx="65" cy="20" r="3" fill="currentColor" opacity="0.6"/>
+                </svg>
+              </div>
+              <p>Saurav Yadav</p>
+              <span>Behind the lens</span>
+            </div>
+            <div class="img-corner-tl"></div>
+            <div class="img-corner-br"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════ PORTFOLIO ══════════════════════════════════ -->
+  <section id="portfolio">
+    <div class="container">
+      <span class="section-tag fade-in">Portfolio</span>
+      <h2 class="section-title fade-in">Selected <em>Work</em></h2>
+
+      <!-- Filter Buttons -->
+      <div class="filter-bar fade-in">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="editing">Video Editing</button>
+        <button class="filter-btn" data-filter="cinematography">Cinematography</button>
+        <button class="filter-btn" data-filter="color">Color Grading</button>
+      </div>
+
+      <!-- Portfolio Grid — 6 local videos (1.mp4 to 6.mp4) -->
+      <div class="portfolio-grid" id="portfolioGrid">
+
+        <div class="portfolio-card fade-in" data-category="cinematography">
+          <div class="card-video">
+            <div class="video-wrapper">
+              <video controls playsinline loop >
+                <source src="videos/1.mp4" type="video/mp4">
+              </video>
+            </div>
+            
+          </div>
+          <div class="card-info">
+            <span class="card-category">Cinematography</span>
+            <h3 class="card-title">Reel 01</h3>
+          </div>
+        </div>
+
+        <div class="portfolio-card fade-in" data-category="editing">
+          <div class="card-video">
+            <div class="video-wrapper">
+              <video controls playsinline >
+                <source src="videos/2.mp4" type="video/mp4">
+              </video>
+            </div>
+          </div>
+          <div class="card-info">
+            <span class="card-category">Video Editing</span>
+            <h3 class="card-title">Reel 02</h3>
+          </div>
+        </div>
+
+        <div class="portfolio-card fade-in" data-category="color">
+          <div class="card-video">
+            <div class="video-wrapper">
+              <video controls playsinline loop>
+                <source src="videos/3.mp4" type="video/mp4">
+              </video>
+            </div>
+          </div>
+          <div class="card-info">
+            <span class="card-category">Color Grading</span>
+            <h3 class="card-title">Reel 03</h3>
+          </div>
+        </div>
+
+        <div class="portfolio-card fade-in" data-category="cinematography">
+          <div class="card-video">
+            <div class="video-wrapper">
+              <video controls playsinline loop>
+                <source src="videos/4.mp4" type="video/mp4">
+              </video>
+            </div>
+          </div>
+          <div class="card-info">
+            <span class="card-category">Cinematography</span>
+            <h3 class="card-title">Reel 04</h3>
+          </div>
+        </div>
+
+        <div class="portfolio-card fade-in" data-category="editing">
+          <div class="card-video">
+            <div class="video-wrapper">
+              <video controls playsinline loop muted>
+                <source src="videos/5.mp4" type="video/mp4">
+              </video>
+            </div>
+          </div>
+          <div class="card-info">
+            <span class="card-category">Video Editing</span>
+            <h3 class="card-title">Reel 05</h3>
+          </div>
+        </div>
+
+        <div class="portfolio-card fade-in" data-category="color">
+          <div class="card-video">
+            <div class="video-wrapper">
+              <video controls playsinline loop muted>
+                <source src="videos/6.mp4" type="video/mp4">
+              </video>
+            </div>
+          </div>
+          <div class="card-info">
+            <span class="card-category">Color Grading</span>
+            <h3 class="card-title">Reel 06</h3>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- View Gallery Button -->
+      <div class="gallery-cta fade-in">
+        <button class="btn-gallery" id="openGallery">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg>
+          View Full Gallery
+          <span class="gallery-count"></span>
+        </button>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════ GALLERY MODAL ══════════════════════════════ -->
+  <div class="gallery-modal" id="galleryModal">
+    <div class="gallery-modal-inner">
+
+      <!-- Header -->
+      <div class="gallery-header">
+        <div class="gallery-header-left">
+          <span class="gallery-title">Full Gallery</span>
+          <span class="gallery-subtitle">— Saurav Yadav</span>
+        </div>
+        <div class="gallery-header-right">
+          <!-- Tab switcher -->
+          <div class="gallery-tabs">
+            <button class="gallery-tab active" data-tab="videos">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="23 7 16 12 23 17 23 7"/><rect x="1" y="5" width="15" height="14" rx="2"/></svg>
+              Videos
+            </button>
+            <button class="gallery-tab" data-tab="photos">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
+              Photos
+            </button>
+          </div>
+          <button class="gallery-close" id="closeGallery" aria-label="Close gallery">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+          </button>
+        </div>
+      </div>
+
+      <!-- Videos Tab -->
+      <div class="gallery-tab-content active" id="tab-videos">
+        <div class="gallery-grid" id="galleryVideoGrid">
+          <!-- JS will inject items 7–20 videos here -->
+        </div>
+      </div>
+
+      <!-- Photos Tab -->
+      <div class="gallery-tab-content" id="tab-photos">
+        <div class="gallery-grid gallery-grid--photos" id="galleryPhotoGrid">
+          <!-- JS will inject photo items here -->
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Lightbox for photos -->
+  <div class="lightbox" id="lightbox">
+    <button class="lightbox-close" id="lightboxClose">✕</button>
+    <button class="lightbox-prev" id="lightboxPrev">‹</button>
+    <button class="lightbox-next" id="lightboxNext">›</button>
+    <div class="lightbox-img-wrap">
+      <img id="lightboxImg" src="" alt="Gallery photo">
+    </div>
+    <div class="lightbox-counter" id="lightboxCounter"></div>
+  </div>
+
+  <!-- ═══════════════════════════════════ FILMS ═══════════════════════════════════ -->
+  <section id="films">
+    <div class="container">
+      <span class="section-tag fade-in">Short Films</span>
+      <h2 class="section-title fade-in">Featured <em>Stories</em></h2>
+
+      <div class="films-grid">
+
+        <div class="film-card film-card--featured fade-in">
+          <div class="film-video-wrap">
+            <div class="video-wrapper">
+              <iframe src="https://www.youtube.com/embed/mP2oFGbDNk8?rel=0&modestbranding=1&color=white" title="Monsoon Sonata" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+          </div>
+          <div class="film-meta">
+            <div class="film-meta-left">
+              <span class="film-tag">Short Film</span>
+              <h3 class="film-title">Monsoon Sonata</h3>
+              <p class="film-desc">A meditative short about loss, memory, and the first rains of the season. Shot on location in Himachal Pradesh over 4 days.</p>
+            </div>
+            <div class="film-meta-right">
+              <div class="film-stat"><span>Director</span><strong>Nikhil Kumar</strong></div>
+              <div class="film-stat"><span>Duration</span><strong>12 min</strong></div>
+              <div class="film-stat"><span>Year</span><strong>2024</strong></div>
+            </div>
+          </div>
+          <div class="film-number">01</div>
+        </div>
+
+        <div class="film-card film-card--featured fade-in">
+          <div class="film-video-wrap">
+            <div class="video-wrapper">
+              <iframe src="https://www.youtube.com/embed/DyDfgMOUjCI?rel=0&modestbranding=1&color=white" title="The Last Light" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+          </div>
+          <div class="film-meta">
+            <div class="film-meta-left">
+              <span class="film-tag">Documentary</span>
+              <h3 class="film-title">The Last Light</h3>
+              <p class="film-desc">An intimate portrait of street photographers in Delhi's old city as dusk swallows the day and lanterns take over.</p>
+            </div>
+            <div class="film-meta-right">
+              <div class="film-stat"><span>Director</span><strong>Nikhil Kumar</strong></div>
+              <div class="film-stat"><span>Duration</span><strong>18 min</strong></div>
+              <div class="film-stat"><span>Year</span><strong>2023</strong></div>
+            </div>
+          </div>
+          <div class="film-number">02</div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════ CONTACT ══════════════════════════════════ -->
+  <section id="contact">
+    <div class="container">
+      <div class="contact-inner fade-in">
+        <span class="section-tag">Contact</span>
+        <h2 class="section-title">Let's create<br>something <em>remarkable</em>.</h2>
+        <p class="contact-sub">Have a project in mind? I'd love to hear about it.</p>
+
+        <div class="contact-actions">
+          <a href="mailto:sauravkumar62026@gmail.com" class="btn-primary">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+            Send Email
+          </a>
+          <a href="https://wa.me/919798146438" target="_blank" rel="noopener" class="btn-whatsapp">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/></svg>
+            WhatsApp
+          </a>
+        </div>
+
+        <div class="social-links">
+          <a href="https://www.instagram.com/wander_saurav/" class="social-link">Instagram</a>
+          <span class="social-sep">·</span>
+          <a href="https://youtube.com/@saurav7070?si=OirjSV_V9lns0BG4" class="social-link">YouTube</a>
+          <span class="social-sep">·</span>
+          <a href="#" class="social-link">LinkedIn</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-inner">
+      <span class="footer-name">© 2024 Saurav Yadav</span>
+      <span class="footer-role">Cinematographer & Video Editor</span>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
